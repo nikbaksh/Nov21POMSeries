@@ -22,7 +22,7 @@ public class LoginPageTest extends BaseTest {
 	}
 	
 	@Description("LoginPage url test")
-	@Test
+	@Test(enabled=false)
 	public void loginPageURLtest() {
 	String url =loginPage.getLoginPageUrl();
 	Assert.assertTrue(url.contains(Constants.LOGIN_PAGE_URL_FRACTION));
